@@ -16,10 +16,10 @@ console.log("Express ilovasi yaratildi");
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-    methods: ["*"],
-    allowedHeaders: ["*"],
+    origin: "https://user-f.vercel.app", // Front-end Vercel domeni
+    credentials: true, // Agar cookie yoki autentifikatsiya ishlatilsa
+    methods: ["GET", "POST", "PUT", "DELETE"], // Ruxsat berilgan metodlar
+    allowedHeaders: ["Content-Type"], // Ruxsat berilgan header’lar
   })
 );
 
